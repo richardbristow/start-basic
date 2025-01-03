@@ -3,7 +3,6 @@ import tsConfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
   server: {
-    baseURL: '/start-basic',
     prerender: {
       routes: ['/'],
       crawlLinks: true,

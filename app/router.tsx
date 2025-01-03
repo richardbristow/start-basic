@@ -9,6 +9,7 @@ export function createRouter() {
     defaultPreload: 'intent',
     defaultErrorComponent: DefaultCatchBoundary,
     defaultNotFoundComponent: () => <NotFound />,
+    basepath: '/start-basic',
   })
 
   return router
