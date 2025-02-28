@@ -1,9 +1,11 @@
 import { defineConfig } from '@tanstack/start/config';
 import tsConfigPaths from 'vite-tsconfig-paths';
+import { cloudflare } from 'unenv';
 
 export default defineConfig({
   server: {
-    baseURL: '/start-basic',
+    preset: 'cloudflare-pages',
+    unenv: cloudflare,
     prerender: {
       routes: ['/'],
       crawlLinks: true,
